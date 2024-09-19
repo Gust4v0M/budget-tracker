@@ -1,0 +1,16 @@
+
+
+.container{
+    background-color: #00d09e;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h3{
+    font-size: 5vh;
+    color: white;
+    font-family: "Karla";
+}
