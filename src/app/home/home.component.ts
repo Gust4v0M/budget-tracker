@@ -11,6 +11,7 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeComponent {
   selectedPeriod: string = 'day'; 
+  
 
   chooseColor(period: string) {
     this.selectedPeriod = period;
@@ -19,4 +20,6 @@ export class HomeComponent {
   getBackgroundColor(period: string): string {
     return this.selectedPeriod === period ? '#00d09e' : '#dff6e2';
   }
+
+
 }

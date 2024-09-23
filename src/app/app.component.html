@@ -1,1 +1,12 @@
 <router-outlet></router-outlet>
+<div class="main">
+    <footer *ngIf="router.url !== '/'"> 
+        <ul>
+            <li> <i routerLink="/home" class="bi bi-house-door"></i></li>
+            <li> <i class="bi bi-search"></i></li>
+            <li> <i routerLink="/add-transactions" class="bi bi-arrow-left-right"></i></li>
+            <li> <i class="bi bi-plus-lg"></i></li>
+
+        </ul>
+    </footer>
+</div>

@@ -116,13 +116,14 @@ li{
     list-style: none;
 }
 
-/* #icon-exe{
+#icon-exe{
     color: white;
     background-color: #6db5fd;
     height: 103px;
     width: 107px;
-    border-radius: 27px;
-} */
+    border-radius: 20px;
+    padding: 19px;
+} 
 
 .row{
     width: 85%;
