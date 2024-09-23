@@ -5,21 +5,58 @@
             <div class="balanco-geral">
                 <div class="bal-exp">
                     <div class="balance">
-                        <p>Balanço Total</p>
-                        <p class="bal">{{'R$' + '7.783,51'}}</p>
+                        <p> <i class="bi bi-arrow-up-right-square"> </i> Balanço Total</p>
+                        <p class="bal"> {{'R$' + '7.783,51'}}</p>
                     </div>
                     <div class="expensive">
-                       <p> Despesa Total</p>
+                       <p><i class="bi bi-arrow-down-right-square"></i> Despesa Total</p>
                        <p class="exp">{{'-R$' + '1.235,01'}}</p>
                     </div>
                 </div>
-                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" style="width: 25%"></div>
-                  </div>
+                <div class="progress-stacked">
+                    <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                      <div class="progress-bar bg-dark">{{ '30%' }}</div>
+                    </div>
+                    <div class="progress bar2" role="progressbar" aria-label="Segment two" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                      <div class="progress-bar bg-light" style="border-radius: 20px;"> <p style="font-weight: bold;">  {{ 'R$20.000,00' }} </p> </div>
+                    </div>
+                  </div>    
+
+                  <p style="margin-top:1vh;">{{ '30%' }} Das suas dividas, parece bom!</p>
             </div>
         </header>
         <div class="general-informations">
 
+            <div class="board-info">
+
+            </div>
+
+            <div class="period">
+                <ul class="period-list">
+                    <li class="period-date" [ngStyle]="{'background-color': getBackgroundColor('day')}"
+                      (click)="chooseColor('day')">Dia</li>
+                    <li class="period-date" [ngStyle]="{'background-color': getBackgroundColor('week')}"
+                      (click)="chooseColor('week')">Semana</li>
+                    <li class="period-date" [ngStyle]="{'background-color': getBackgroundColor('month')}"
+                      (click)="chooseColor('month')">Mês</li>
+                  </ul>
+            </div>  
+            <div class="container text-center">
+                <div class="row">
+                  <div class="col">
+                    Column
+                  </div>
+                  <div class="col">
+                    Column
+                  </div>
+                  <div class="col">
+                    Column
+                  </div>
+                  <div class="col">
+                    Column
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
 </div>

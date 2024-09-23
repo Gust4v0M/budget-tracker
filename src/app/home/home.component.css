@@ -14,7 +14,7 @@ header{
 
 .general-informations{
     border-radius: 50px 50px 0px 0px;
-    background-color: #f1fff2;
+    background-color: #f1fff3;
     z-index: 1;
     min-height: 63vh;
     margin-top:-5vh;
@@ -52,4 +52,84 @@ p{
     color:white;
     font-weight: 700;
     font-size: 24px
+}
+.progress-stacked{
+    margin-top: 3vh;
+    width: 80%;  
+    height: 3vh;
+    border-radius: 20px;    
+}
+
+.progress{
+    border-style: none;
+    height: 3vh;
+    border-radius: 20px;
+}
+
+.bar2{
+    border-style: none;
+    margin-left: -5px;
+
+}
+
+.general-informations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.board-info{
+    background-color: #00d09e;
+    height: 152px;
+    width: 357px;
+    border-radius: 31px;
+    margin-top:3vh
+}
+
+.period{
+    background-color: #dff6e2;
+    height: 60px;
+    width: 358px;
+    border-radius: 22px;
+    margin-top: 3vh;
+}
+
+.period-list{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+
+.period-date{
+    width: 95px;
+    height: 50px;
+    border-radius: 19px;
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+li{
+    list-style: none;
+}
+
+/* #icon-exe{
+    color: white;
+    background-color: #6db5fd;
+    height: 103px;
+    width: 107px;
+    border-radius: 27px;
+} */
+
+.row{
+    width: 85%;
+}
+.text-center{
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
