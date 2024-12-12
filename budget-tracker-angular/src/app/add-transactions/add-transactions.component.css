@@ -1,0 +1,74 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+header{
+    height: 18vh;
+    width: 100%;
+    background-color: #00d09e;
+    z-index: -1;
+    display: flex;
+    padding-top: 3vh;
+    justify-content: center;
+    
+}
+h4{
+    font-family: "SUSE";
+    color:black;
+    font-weight: bolder;
+}
+
+.form{  
+    border-radius: 50px 50px 0px 0px;
+    background-color: #f1fff3;
+    z-index: 1;
+    min-height: 63vh;
+    margin-top:-5vh;    
+}
+
+.form-info{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 4.5vh;
+    align-items: center;
+    justify-content:space-around;
+    align-content: space-around;
+    padding-top: 3vh;
+    
+}
+
+input{
+    border-radius: 18px;
+    width: 320px;
+    min-height: 36px;
+    border-style: none;
+    background-color: #DFF7E2 ;
+    margin-bottom: 3vh;
+}
+p{
+    font-family: "SUSE";
+    color:black;
+    font-weight: bolder;
+}
+
+.large-txt{
+    min-height: 166px;
+    color: #00d09e;
+    padding-bottom: 14vh;
+    padding-left: 2vh;
+}
+
+button{
+    width: 169px;
+    height: 36px;
+    background-color:#00d09e ;
+    border-style: none;
+    border-radius: 20px;
+    margin-bottom: 5vh;
+}
+
+.form-info p {
+    align-self: flex-start;
+}
