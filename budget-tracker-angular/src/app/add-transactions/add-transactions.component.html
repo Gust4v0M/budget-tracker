@@ -4,20 +4,20 @@
             <h4>Adicionar Despesas</h4>
         </header>
         <div class="form">
-            <div class="form-info">
+            <form [formGroup]="form" class="form-info">
                 <p>Data</p>
-                <input type="date">
+                <input type="date" formControlName="date">
                 <p>Categoria</p>
-                <input type="text">
+                <input type="text" formControlName="category">
                 <p>Quantidade</p>
-                <input type="number">
+                <input type="number" formControlName="amount">
                 <p>Titulo</p>
-                <input type="text">
+                <input type="text" formControlName="name">
+                <p>Descrição</p>
+                <input class="large-txt" type="text" placeholder="Digite a mensagem" formControlName="description">
 
-                <input class="large-txt" type="text" placeholder="Digite a mensagem">
-
-                <button>Salvar</button>
-            </div>
+                <button (click)="onSubmit()">Salvar</button>
+            </form>
         </div>
     </div>
 </div>
