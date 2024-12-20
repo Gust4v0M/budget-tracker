@@ -19,11 +19,12 @@ export class AddTransactionsComponent  {
   ) {
 
     this.form = formBuilder.group({
-      date:[null],
+      //date:[null],
       category:[null],
       amount:[null],
       name:[null],
-      description:[null]
+      // description:[null],
+      type:["Receita"]
     })
   }
 
@@ -32,6 +33,12 @@ export class AddTransactionsComponent  {
       (res) => console.log(res),
       (error) => this.onError()
     )
+  }
+
+  ngOnInit(){
+  this.service.list().subscribe(list => console.log(list))
+
+
   }
 
   private onError(){
