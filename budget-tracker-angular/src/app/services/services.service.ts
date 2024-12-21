@@ -8,7 +8,7 @@ import { delay, first, tap } from 'rxjs';
 })
 export class ServicesService {
 
-  private readonly apiKey= 'http://localhost:8080/api/transaction';
+  private readonly apiKey= 'api/transaction';
 
   constructor(public httpClient: HttpClient) { }
 
