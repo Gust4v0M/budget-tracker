@@ -29,6 +29,7 @@ export class AddTransactionsComponent  {
   }
 
   onSubmit(){
+    console.log("dados do formulario: " + this.form.value)
     this.service.save(this.form.value).subscribe(
       (res) => console.log(res),
       (error) => this.onError()

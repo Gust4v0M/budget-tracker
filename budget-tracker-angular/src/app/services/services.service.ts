@@ -12,11 +12,19 @@ export class ServicesService {
 
   constructor(public httpClient: HttpClient) { }
 
-  save(record: Transactions){
-    console.log(this.apiKey, record)
-    return this.httpClient.post<Transactions>(this.apiKey, record);
+  // save(record: Transactions){
+  //   console.log(this.apiKey, record)
+  //   return this.httpClient.post<Transactions>(this.apiKey, record);
 
+  // }
+
+  save(record: Transactions) {
+    console.log(this.apiKey, record);
+    return this.httpClient.post<Transactions>(this.apiKey, record, {
+      headers: { 'Content-Type': 'application/json' }
+    });
   }
+
 
  list(){
   return this.httpClient.get<Transactions>(this.apiKey)
