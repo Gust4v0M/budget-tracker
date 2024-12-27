@@ -2,13 +2,14 @@ import { Injectable } from '@angular/core';
 import { Transactions } from '../models/transactions';
 import { HttpClient } from '@angular/common/http';
 import { delay, first, tap } from 'rxjs';
+import { Users } from '../models/users';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ServicesService {
 
-  private readonly apiKey= 'api/transaction';
+  private readonly apiKey= 'api/users';
 
   constructor(public httpClient: HttpClient) { }
 
@@ -27,7 +28,7 @@ export class ServicesService {
 
 
  list(){
-  return this.httpClient.get<Transactions>(this.apiKey)
+  return this.httpClient.get<Users>(this.apiKey)
   .pipe(
     first(),
     delay(2000),
