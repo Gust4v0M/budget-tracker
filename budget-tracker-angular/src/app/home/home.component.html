@@ -20,7 +20,7 @@
                     <div class="progress bar2" role="progressbar" aria-label="Segment two" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
                       <div class="progress-bar bg-light" style="border-radius: 20px;"> <p style="font-weight: bold;">  {{ 'R$20.000,00' }} </p> </div>
                     </div>
-                  </div>    
+                  </div>
 
                   <p style="margin-top:1vh;">{{ '30%' }} Das suas dividas, parece bom!</p>
             </div>
@@ -40,7 +40,7 @@
                     <li class="period-date" [ngStyle]="{'background-color': getBackgroundColor('month')}"
                       (click)="chooseColor('month')">Mês</li>
                   </ul>
-            </div>  
+            </div>
             <div class="container text-center">
                 <div class="row">
                   <div class="col">
@@ -56,6 +56,12 @@
                     3849,33
                   </div>
                 </div>
+                <ul *ngFor="let result of result$">
+                  <li>
+                    <!-- {{ result }} -->
+                  </li>
+                </ul>
+
               </div>
         </div>
     </div>
