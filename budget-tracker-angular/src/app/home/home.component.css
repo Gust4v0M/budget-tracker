@@ -19,6 +19,9 @@ header{
     min-height: 63vh;
     margin-top:-5vh;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h5{
     color: white;
@@ -36,7 +39,7 @@ h5{
     justify-content: space-around;
     align-content:space-between;
     width: 80%;
-    
+
 }
 
 p{
@@ -55,9 +58,9 @@ p{
 }
 .progress-stacked{
     margin-top: 3vh;
-    width: 80%;  
+    width: 80%;
     height: 3vh;
-    border-radius: 20px;    
+    border-radius: 20px;
 }
 
 .progress{
@@ -72,11 +75,7 @@ p{
 
 }
 
-.general-informations{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .board-info{
     background-color: #00d09e;
     height: 152px;
@@ -93,6 +92,16 @@ p{
     margin-top: 3vh;
 }
 
+ .list-transactions{
+
+  display: flex;
+  align-items: center;
+
+  justify-content: space-around;
+  align-content:space-between;
+  flex-direction: row;
+}
+
 .period-list{
     width: 100%;
     height: 100%;
@@ -106,7 +115,7 @@ p{
     width: 95px;
     height: 50px;
     border-radius: 19px;
-    
+
     display: flex;
     align-items: center;
     justify-content:center;
@@ -123,14 +132,14 @@ li{
     width: 107px;
     border-radius: 20px;
     padding: 19px;
-} 
+}
 
 .row{
     width: 85%;
 }
 .text-center{
     margin-top: 3vh;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content:center; */
 }
